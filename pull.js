@@ -1,7 +1,8 @@
 var listContainer = document.getElementById("list")
 
 
-// PULL
+//GET RANDOM EXERCISES
+//PULL
 //lats is pull
 const latsIDArr = [362 /*Bentover Rows*/, 181 /*chinups*/, 213 /*close grip lat pull downs*/, 105 /*Deadlifts*/, 143 /*low row*/, 330 /*Superman*/, 339 /*shotgun row*/, 204 /*wide grip pulldown*/, 202 /*pendelay rows*/]
 let latsRandExercise = latsIDArr[Math.floor(Math.random()*latsIDArr.length)]
@@ -41,14 +42,14 @@ const getLats = async lats => {
     }
 }
 getLats()
-//fetching quad exercises
-const getQuad = async quad => {
+//fetching hams exercises
+const getHams = async hams => {
     try {
-        const res = await fetch(`https://wger.de/api/v2/exerciseinfo/${quadRandExercise}/`)
+        const res = await fetch(`https://wger.de/api/v2/exerciseinfo/${hamsRandExercise}/`)
         if (res.status !== 200) throw new Error('Exercise not found')
         const collectData = await res.json()
         // console.log(collectData)
-        displayQuadExercises(collectData)
+        displayHamsExercises(collectData)
     } catch(err) {
         var li = document.createElement('li')
         li.textContent = err.message
@@ -57,15 +58,15 @@ const getQuad = async quad => {
         
     }
 }
-getQuad()
-//fetching chest exercises
-const getChest = async chest => {
+getHams()
+//fetching biceps exercises
+const getBiceps = async biceps => {
     try {
-        const res = await fetch(`https://wger.de/api/v2/exerciseinfo/${chestRandExercise}/`)
+        const res = await fetch(`https://wger.de/api/v2/exerciseinfo/${bicepsRandExercise}/`)
         if (res.status !== 200) throw new Error('Exercise not found')
         const collectData = await res.json()
         // console.log(collectData)
-        displayChestExercises(collectData)
+        displayBicepsExercises(collectData)
     } catch(err) {
         var li = document.createElement('li')
         li.textContent = err.message
@@ -74,15 +75,15 @@ const getChest = async chest => {
         
     }
 }
-getChest()
-//fetching serAnt exercises
-const getSerAnt = async serAnt => {
+getBiceps()
+//fetching abs exercises
+const getAbs = async abs => {
     try {
-        const res = await fetch(`https://wger.de/api/v2/exerciseinfo/${serAntRandExercise}/`)
+        const res = await fetch(`https://wger.de/api/v2/exerciseinfo/${absRandExercise}/`)
         if (res.status !== 200) throw new Error('Exercise not found')
         const collectData = await res.json()
         // console.log(collectData)
-        displaySerAntExercises(collectData)
+        displayAbsExercises(collectData)
     } catch(err) {
         var li = document.createElement('li')
         li.textContent = err.message
@@ -91,15 +92,15 @@ const getSerAnt = async serAnt => {
         
     }
 }
-getSerAnt()
+getAbs()
 //fetching glutes exercises
-const getGlutes = async glutes => {
+const getTrap = async trap => {
     try {
-        const res = await fetch(`https://wger.de/api/v2/exerciseinfo/${glutesRandExercise}/`)
+        const res = await fetch(`https://wger.de/api/v2/exerciseinfo/${trapRandExercise}/`)
         if (res.status !== 200) throw new Error('Exercise not found')
         const collectData = await res.json()
         // console.log(collectData)
-        displayGlutesExercises(collectData)
+        displayTrapExercises(collectData)
     } catch(err) {
         var li = document.createElement('li')
         li.textContent = err.message
@@ -108,11 +109,11 @@ const getGlutes = async glutes => {
         
     }
 }
-getGlutes()
+getTrap()
 
 
 //DISPLAY
-//display tricep exercises
+//display lats exercises
 function displayLatsExercises(e) {
     const nameEl = document.getElementById("lats_name")
     nameEl.textContent = e.name
@@ -122,43 +123,43 @@ function displayLatsExercises(e) {
     const randomNumber = Math.floor(Math.random() * (30 - 4 + 1)) + 4
     randomNumEl.textContent = `${randomNumber}xs`
 }
-//display quad exercises
-function displayQuadExercises(e) {
-    const nameEl = document.getElementById("quad_name")
+//display hams exercises
+function displayHamsExercises(e) {
+    const nameEl = document.getElementById("hams_name")
     nameEl.textContent = e.name
-    const descriptionEl = document.getElementById("quad_description")
+    const descriptionEl = document.getElementById("hams_description")
     descriptionEl.innerHTML = e.description
-    const randomNumEl = document.getElementById("quad_random_number")
+    const randomNumEl = document.getElementById("hams_random_number")
     const randomNumber = Math.floor(Math.random() * (30 - 4 + 1)) + 4
     randomNumEl.textContent = `${randomNumber}xs`
 }
-//display chest exercises
-function displayChestExercises(e) {
-    const nameEl = document.getElementById("chest_name")
+//display biceps exercises
+function displayBicepsExercises(e) {
+    const nameEl = document.getElementById("biceps_name")
     nameEl.textContent = e.name
-    const descriptionEl = document.getElementById("chest_description")
+    const descriptionEl = document.getElementById("biceps_description")
     descriptionEl.innerHTML = e.description
-    const randomNumEl = document.getElementById("chest_random_number")
+    const randomNumEl = document.getElementById("biceps_random_number")
     const randomNumber = Math.floor(Math.random() * (30 - 4 + 1)) + 4
     randomNumEl.textContent = `${randomNumber}xs`
 }
-//display serAnt exercises
-function displaySerAntExercises(e) {
-    const nameEl = document.getElementById("serant_name")
+//display abs exercises
+function displayAbsExercises(e) {
+    const nameEl = document.getElementById("abs_name")
     nameEl.textContent = e.name
-    const descriptionEl = document.getElementById("serant_description")
+    const descriptionEl = document.getElementById("abs_description")
     descriptionEl.innerHTML = e.description
-    const randomNumEl = document.getElementById("serant_random_number")
+    const randomNumEl = document.getElementById("abs_random_number")
     const randomNumber = Math.floor(Math.random() * (30 - 4 + 1)) + 4
     randomNumEl.textContent = `${randomNumber}xs`
 }
-//display glutes exercises
-function displayGlutesExercises(e) {
-    const nameEl = document.getElementById("glutes_name")
+//display trap exercises
+function displayTrapExercises(e) {
+    const nameEl = document.getElementById("trap_name")
     nameEl.textContent = e.name
-    const descriptionEl = document.getElementById("glutes_description")
+    const descriptionEl = document.getElementById("trap_description")
     descriptionEl.innerHTML = e.description
-    const randomNumEl = document.getElementById("glutes_random_number")
+    const randomNumEl = document.getElementById("trap_random_number")
     const randomNumber = Math.floor(Math.random() * (30 - 4 + 1)) + 4
     randomNumEl.textContent = `${randomNumber}xs`
 }
