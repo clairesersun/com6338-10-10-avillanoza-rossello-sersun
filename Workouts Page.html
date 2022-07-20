@@ -7,12 +7,12 @@
     <title>Options Fitness</title>
 	
 	 <!--Main CSS Stylesheet-->
-  <link rel="Stylesheet" type="text/css" href=""/>
+  <link rel="Stylesheet" type="text/css" href="styles/Stylesheet.css"/>
 </head>
 	
 <body>
     <header>
-		  <img alt="Logo" src="">
+		  <img alt="Logo" src="images/logo_com6338_options.png">
 	</header>
 		
 	 <!--Entire Section/Rectangle Box-->
@@ -20,25 +20,18 @@
 		   
 	 <!--First Subdivision-->
 		   <div id="workoutType">
-			   <h1>Please select a workout</h1>
-		   </div>
-		   
-	 <!--Second Subdivision - Form-->	   
-           <form action="/DEFAULT_URL" method="post"> <!--Form with method ‘post’ and set the value of the action attribute to a default URL, in this case the Push Page.-->
-              <p>What you give is what you get."<br>
+			   <h2>Please select a workout</h2>
+		   </div> 
+    
+       <p id="randomquote">"What you give is what you get."<br>
                 -Byron Pulsifer</p>
-  
-	<!--button with type submit. Will trigger the default action attribute of the form and send our input data to that URL - Push Page in this case.-->
-           <button type="submit" formaction="#">Push</button>
-          
-	<!--‘formaction‘ attribute give it the value of the secondary URL when this button is clicked.
-    The formaction attribute will override the action attribute of the form and send the data to your desired location. Pull Page in this case-->	
-           <button type="submit" formaction="/URL2">Pull</button>
-           </form>
+
+      <ul id="navigateworkouts">
+					<a href="Push Page.html">Push</a>
+					<a href="Pull Page.html">Pull</a>
+			</ul>
 		   
 	   </section>
 		
 </body>
 </html>
-
-

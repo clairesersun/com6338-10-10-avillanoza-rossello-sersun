@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +7,7 @@
     <title>Options Fitness</title>
 	
 	 <!--Main CSS Stylesheet-->
-  <link rel="Stylesheet" type="text/css" href=""/>
+  <link rel="Stylesheet" type="text/css" href="styles/Stylesheet.css"/>
 </head>
 	
 <body>
@@ -16,34 +15,20 @@
 		
 	 <!--Corner Logo - I added the link code in case we want the logo to be clickable but it does not redirecting to other page. 
       Will stay on the same page even if clicked-->
-	      <a href="#" class="logo">Options</a>
-		  <img alt="Logo" src="">
+		  <img id="indexlogo" alt="Logo" src="images/logo_com6338_options.png">
 	</header>
 
 	 <!--Entire Section/Rectangle Box-->
 	   <section>
 	 <!--First Subdivision-->
-		   <div id="name">
-			   <h1>Please enter your name</h1>
+		   <div id="nameblock">
+			<form id="name-box" action="Loading Page.html">
+				<label id="namelabel" for="name">Name:</label><br>
+				<input id="inputtext" type="text" placeholder="Please enter your name"><br>
+				<button id="indexsubmit" type="submit">Submit</button>
+			</form>
 		   </div>
-	 <!--Second Subdivision - Form-->
-		     <form id="name-box" action="Loading Page.html">
-			     <label for="name">Name:</label><br>
-			     <input type="text" placeholder="Please enter your name"><br>
-			     <button type="submit">Submit</button>
-			 </form>
 	   </section>
 		
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
