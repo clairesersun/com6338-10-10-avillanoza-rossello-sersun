@@ -85,3 +85,23 @@
 
 
 }
+
+/* Loader Bar CSS*/
+#loaderBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#myProgress {
+    width: 50%;
+    background-color: #F5F5F5;
+    border-radius: 30px;
+  }
+  
+  #loaderBar {
+    width: 1%;
+    height: 30px;
+    background: linear-gradient(90deg, #4DAFD9 0%, #E2BE01 78.9%, #B10404 100%);
+    border-radius: 30px;
+  }
