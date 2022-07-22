@@ -105,3 +105,63 @@
     background: linear-gradient(90deg, #4DAFD9 0%, #E2BE01 78.9%, #B10404 100%);
     border-radius: 30px;
   }
+
+
+  /* Welcome Page CSS */
+
+  #Hello {
+    position: absolute;
+    width: 298px;
+    height: 29px;
+    left: 65px;
+    top: 200px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    align-items: center;
+
+    background: linear-gradient(90deg, #4DAFD9 32.11%, #E2BE01 51.86%, #B10404 68.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+
+ 
+
+  #inputName {
+    position: absolute;
+    width: 104px;
+    height: 29px;
+    left: 228px;
+    top: 143px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 23px;
+
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(90deg, #4DAFD9 32.11%, #E2BE01 51.86%, #B10404 68.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+  }
+
+  #welcomeLogo {
+
+    position: absolute;
+    width: 318px;
+    height: 89px;
+    left: 15px;
+    top: 34px;
+
+  }
