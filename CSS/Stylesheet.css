@@ -105,3 +105,110 @@
     background: linear-gradient(90deg, #4DAFD9 0%, #E2BE01 78.9%, #B10404 100%);
     border-radius: 30px;
   }
+
+
+
+/*--- PULL PAGE CSS ---*/
+
+   /*--homebutton --*/ #pullLogo {
+      position: absolute;
+      left: 12px;
+      top: 11px;
+      align-items: center;
+  }
+
+ /*--homebutton --*/ #homePullId {
+    position: absolute;
+    left: 376px;
+    top: 46px;
+    font-family: 'roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+ /*--reload button--*/ li#switchId {
+  position: absolute;
+  left: 455px;
+  top: 42px;
+  display: flex;
+}
+
+   /*--homebutton --*/h3.pll{
+    position: absolute;
+    width: 182px;
+    height: 95px;
+    left: 26px;
+    top: 165px;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: roboto;
+    font-style: bold;
+}
+
+  #rx {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    left: 242px;
+    top: 271px;
+    background: url(rx-logo-png-transparent.png);
+  }
+
+  p.bsm {
+    position: absolute;
+    width: 364px;
+    height: 69px;
+    left: 26px;
+    top: 197px;
+    font-family: 'roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+#list {
+  top: 60px;
+  left: 200px;
+  padding-left: 50px;
+  padding-top: 330px;
+  padding-right: 9px;
+}
+
+#lats_name,
+#hams_name,
+#biceps_name,
+#abs_name,
+#trap_name {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  text-transform:lowercase;
+}
+
+#redBar {
+  position: absolute;
+  width: 1425px;
+  height: 28px;
+  left: 112px;
+  top: 179px;
+  background: linear-gradient(89.99deg, #B10404 11.42%, #FFFFFF 95.32%);
+  border-radius: 30px;
+}
+
+/*--- PUSH PAGE ---*/
+
+
