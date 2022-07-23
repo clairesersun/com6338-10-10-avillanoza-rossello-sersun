@@ -2,36 +2,38 @@ var listContainer = document.getElementById("list")
 
 
 // PULL
-//lats is pull
-const latsIDArr = [362 /*Bentover Rows*/, 181 /*chinups*/, 213 /*close grip lat pull downs*/, 105 /*Deadlifts*/, 143 /*low row*/, 330 /*Superman*/, 339 /*shotgun row*/, 204 /*wide grip pulldown*/, 202 /*pendelay rows*/]
-let latsRandExercise = latsIDArr[Math.floor(Math.random()*latsIDArr.length)]
-console.log(latsRandExercise)
-//hams is pull
-const hamsIDArr = [116 /*goodmornings*/, 117 /*leg curls*/, 626 /*muscle up*/]
-let hamsRandExercise = hamsIDArr[Math.floor(Math.random()*hamsIDArr.length)]
-console.log(hamsRandExercise)
-//biceps is pull
-const bicepsIDArr = [81 /*bicep curls*/, 86 /*hammer curls*/, 291 /*hercules curls*/, 771 /*reverse curl*/, 205 /*single arm preacher curl*/, 305 /*z curls*/]
-let bicepsRandExercise = bicepsIDArr[Math.floor(Math.random()*bicepsIDArr.length)]
-console.log(bicepsRandExercise)
-//abs
-const absIDArr = [310 /*trunk rotation*/, 238 /*plank*/, 307 /*bear walk*/, 383 /*hollow hold*/, 631 /*scissors*/, 325 /*side plank*/]
-let absRandExercise = absIDArr[Math.floor(Math.random()*absIDArr.length)]
-console.log(absRandExercise)
-const trapIDArr = [805 /*shoulder shrug*/, 311 /*upright row*/, 394 /*face pull*/, 268 /*bent high pulls*/]
-let trapRandExercise = trapIDArr[Math.floor(Math.random()*trapIDArr.length)]
-console.log(trapRandExercise)
+//GET RANDOM EXERCISES
+//random tricep exercise
+const tricepIDArr = [88 /*Bench Press Narrow Grip*/, 82 /*Dips*/, 85 /*French Press*/, 302 /*Side to Side Push Ups*/, 89 /*Tricep Extensions w Cable*/]
+let tricepRandExercise = tricepIDArr[Math.floor(Math.random()*tricepIDArr.length)]
+// console.log(tricepRandExercise)
+//random quad exercise
+const quadIDArr = [570 /* Sumo Squats*/, 111 /*Squats */, 185 /*Squat Jumps */, 788 /*Leg Press */, 177 /*Leg Extension */, 810 /*Jumping Jacks */, 113 /*Dumbell Lunges */]
+let quadRandExercise = quadIDArr[Math.floor(Math.random()*quadIDArr.length)]
+// console.log(quadRandExercise)
+//random chest exercise
+const chestIDArr = [192 /* Bench Press*/, 790 /* Push Up */, 338 /*Isometric Wipers */, 548 /*Wall Slides */]
+let chestRandExercise = chestIDArr[Math.floor(Math.random()*chestIDArr.length)]
+// console.log(chestRandExercise)
+//seratus anterior
+const serAntIDArr = [318 /*Turkish-Get-Up*/, 307 /*Bear Walk*/]
+let serAntRandExercise = serAntIDArr[Math.floor(Math.random()*serAntIDArr.length)]
+// console.log(serAntRandExercise)
+//glutes
+const glutesIDArr = [326 /*Full Sit outs*/, 408 /*Glute Bridge*/, 854 /*Hip Thrusts*/, 160 /*Pistol Squats*/]
+let glutesRandExercise = glutesIDArr[Math.floor(Math.random()*glutesIDArr.length)]
+// console.log(glutesRandExercise)
 
 
 //FETCH
 //fetching tri exercises
-const getLats = async lats => {
+const getTri = async tri => {
     try {
-        const res = await fetch(`https://wger.de/api/v2/exerciseinfo/${latsRandExercise}/`)
+        const res = await fetch(`https://wger.de/api/v2/exerciseinfo/${tricepRandExercise}/`)
         if (res.status !== 200) throw new Error('Exercise not found')
         const collectData = await res.json()
         console.log(collectData)
-        displayLatsExercises(collectData)
+        displayTriExercises(collectData)
     } catch(err) {
         var li = document.createElement('li')
         li.textContent = err.message
@@ -40,7 +42,7 @@ const getLats = async lats => {
         
     }
 }
-getLats()
+getTri()
 //fetching quad exercises
 const getQuad = async quad => {
     try {
@@ -113,12 +115,12 @@ getGlutes()
 
 //DISPLAY
 //display tricep exercises
-function displayLatsExercises(e) {
-    const nameEl = document.getElementById("lats_name")
+function displayTriExercises(e) {
+    const nameEl = document.getElementById("tricep_name")
     nameEl.textContent = e.name
-    const descriptionEl = document.getElementById("lats_description")
+    const descriptionEl = document.getElementById("tricep_description")
     descriptionEl.innerHTML = e.description
-    const randomNumEl = document.getElementById("lats_random_number")
+    const randomNumEl = document.getElementById("tricep_random_number")
     const randomNumber = Math.floor(Math.random() * (30 - 4 + 1)) + 4
     randomNumEl.textContent = `${randomNumber}xs`
 }
