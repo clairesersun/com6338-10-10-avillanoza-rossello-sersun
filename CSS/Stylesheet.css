@@ -102,3 +102,114 @@ button{
     border-radius: 30px;
   }
 
+  /* Workouts Page */
+  #workoutsLogo {
+    position: absolute;
+    width: 186px;
+    height: 51px;
+    left: 9px;
+    top: 68px;
+  }
+
+  #randomquote {
+    position: absolute;
+    width: 310px;
+    height: 58px;
+    left: 39px;
+    top: 239px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    
+    align-items: center;
+    text-align: center;
+
+    color: #E2BE01;
+  }
+
+  #rectangle {
+    width:338px;
+    height:2px;
+    background:linear-gradient(90deg, #4DAFD9 0%, #E2BE01 78.9%, #B10404 100%);;
+    position:absolute;
+    top:359px;
+    left:28px;
+}
+
+  #workoutType {
+
+    position: absolute;
+    width: 311px;
+    height: 53px;
+    left: 39px;
+    top: 306px;
+
+    font-family: 'roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+  }
+
+
+  #workoutsection {
+    position: absolute;
+    width: 311px;
+    height: 53px;
+    left: 39px;
+    top: 306px;
+  }
+
+#pullbutton {
+    position: absolute;
+width: 150.98px;
+height: 69px;
+left: 204px;
+top: 398px;
+
+background: #B10404;
+border-radius: 30px;
+
+font-family: 'roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+}
+
+#pushbutton {
+    position: absolute;
+width: 150.98px;
+height: 69px;
+left: 35.68px;
+top: 398px;
+
+background: #4DAFD9;
+border-radius: 30px;
+
+font-family: 'roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+
+}
