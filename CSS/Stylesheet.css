@@ -133,20 +133,30 @@ button{
     width: 104px;
     height: 29px;
     left: 228px;
-    top: 143px;
+    top: 143px;}
 
 /*--- PULL PAGE CSS ---*/
 
-   /*--homebutton --*/ #pullLogo {
+   /*--homebutton --*/ 
+   #Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+   }
+
+   #pullLogo {
       position: absolute;
       left: 12px;
-      top: 11px;
+      top: 35px;
       align-items: center;
+      height: auto;
+      width: 50vw;
   }
 
  /*--homebutton --*/ #homePullId {
     position: absolute;
-    left: 376px;
+    right: 70px;
     top: 46px;
     font-family: 'roboto';
     font-style: normal;
@@ -160,12 +170,19 @@ button{
 
  /*--reload button--*/ li#switchId {
   position: absolute;
-  left: 455px;
+  right: 10px;
   top: 42px;
   display: flex;
 }
+#sticky{
+  position: fixed;
+  width: 100vw;
+  top: 0%;
+  background-color: #ffffff;
+  z-index: 20;
+}
 
-   /*--homebutton --*/h3.pll{
+   /*--homebutton --*/h3.pll, h3.psh{
     position: absolute;
     width: 182px;
     height: 95px;
@@ -175,6 +192,7 @@ button{
     font-size: 40px;
     font-family: roboto;
     font-style: bold;
+    background-color: #FFFFFF;
 }
 
   #rx {
@@ -184,6 +202,11 @@ button{
     left: 242px;
     top: 271px;
     background: url(rx-logo-png-transparent.png);
+  }
+  #white {
+    width: 100vw;
+    height: 47vh;
+    background-color: #FFFFFF;
   }
 
   p.bsm {
@@ -203,18 +226,25 @@ button{
 }
 
 #list {
-  top: 60px;
-  left: 200px;
-  padding-left: 50px;
-  padding-top: 330px;
-  padding-right: 9px;
+  padding-left: 15vw;
+  padding-top: 48vh;
+  padding-right: 15vw;
+  z-index: 0;
+  position: relative;
+  padding-bottom: 20px;
+  background-color: #FFFFFF;
 }
 
 #lats_name,
 #hams_name,
 #biceps_name,
 #abs_name,
-#trap_name {
+#trap_name,
+#tricep_name, 
+#quad_name,
+#chest_name,
+#serant_name,
+#glutes_name {
   font-family: 'roboto';
   font-style: normal;
   font-weight: 500;
@@ -228,16 +258,28 @@ button{
 
 #redBar {
   position: absolute;
-  width: 1425px;
+  width: 60vw;
   height: 28px;
-  left: 112px;
+  right: 0;
   top: 179px;
   background: linear-gradient(89.99deg, #B10404 11.42%, #FFFFFF 95.32%);
   border-radius: 30px;
 }
 
 /*--- PUSH PAGE ---*/
+#blueBar {
+  position: absolute;
+  width: 60vw;
+  height: 28px;
+  right: 0;
+  top: 179px;
+  background: linear-gradient(89.99deg, #4DAFD9 11.42%, #FFFFFF 95.32%);
+  border-radius: 30px;
+}
 
+#main {
+ width: 100%;
+}
 
   /* Workouts Page */
   #workoutsLogo {
@@ -349,7 +391,4 @@ text-align: center;
 
 color: #ffffff;
 
-
 }
-/* this is the change */
-
