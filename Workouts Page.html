@@ -7,31 +7,41 @@
     <title>Options Fitness</title>
 	
 	 <!--Main CSS Stylesheet-->
-  <link rel="Stylesheet" type="text/css" href="styles/Stylesheet.css"/>
+  <link rel="Stylesheet" type="text/css" href="/CSS/Stylesheet.css"/>
 </head>
 	
 <body>
     <header>
-		  <img alt="Logo" src="images/logo_com6338_options.png">
+		  <img id="workoutsLogo" alt="Logo" src="images/logo_com6338_options.png">
 	</header>
 		
 	 <!--Entire Section/Rectangle Box-->
-	   <section>
+	   <section id="workoutSection">
 		   
 	 <!--First Subdivision-->
 		   <div id="workoutType">
-			   <h2>Please select a workout</h2>
-		   </div> 
-    
-       <p id="randomquote">"What you give is what you get."<br>
-                -Byron Pulsifer</p>
+			   <h2>please select a workout</h2>
+			   <hr id="workoutLine">
+		   </div>
+		   
+		   <div id="rectangle"></div> <!--rainbow line dont delete this--> 
+		   
+		   <div id="randomquote">
+			<blockquote id="quote-text">Lorem Epson</blockquote>
+			<cite id="quote-author">unknown</cite>
+		   </div>
+
 
       <ul id="navigateworkouts">
-					<a href="Push Page.html">Push</a>
-					<a href="Pull Page.html">Pull</a>
+					<a href="Push Page.html">
+						<button id="pushbutton">push</button>
+					</a>
+					<a href="Pull Page.html">
+						<button id="pullbutton">pull</button>
+					</a>
 			</ul>
 		   
 	   </section>
-		
+	   <script src="workoutspage.js"></script>	
 </body>
 </html>
