@@ -20,11 +20,9 @@
     
     width: 160px;
     height: 41px;
-    left: 115px;
-    top: 450px;
-
     background: #E2BE01;
     border-radius: 30px;
+    text-align: center;
 
 }
 
@@ -42,49 +40,47 @@
 }
 
 #namelabel {
-    /* Name: */
+/* Name: */
+
+position: absolute;
+width: 97px;
+height: 29px;
+left: -8px;
+top: -23px;
+
+font-family: 'roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+
+align-items: center;
+text-align: center;
+color: #000000;
 
 
-    width: 97px;
-    height: 29px;
-    left: 75px;
-    top: 349px;
-
-    font-family: 'roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
 
 
 }
 
 #inputtext {
-    /* Please enter your name.... ? Not sure about this. */
-
-    width: 199px;
-    height: 29px;
-    left: 95px;
-    top: 387px;
-
+    position: absolute;
     font-family: 'roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     display: flex;
-    align-items: center;
-    text-align: center;
-
     color: #D9D9D9;
-
-
+    background-color: transparent;
+    padding-left: 45px;
 }
+
+button{
+    padding-top: 50px;
+    padding-left: 40px;
+}
+
 
 /* Loader Bar CSS*/
 #loaderBody {
@@ -105,7 +101,6 @@
     background: linear-gradient(90deg, #4DAFD9 0%, #E2BE01 78.9%, #B10404 100%);
     border-radius: 30px;
   }
-
 
 
 /*--- PULL PAGE CSS ---*/
@@ -212,3 +207,114 @@
 /*--- PUSH PAGE ---*/
 
 
+  /* Workouts Page */
+  #workoutsLogo {
+    position: absolute;
+    width: 186px;
+    height: 51px;
+    left: 9px;
+    top: 68px;
+  }
+
+  #randomquote {
+    position: absolute;
+    width: 310px;
+    height: 58px;
+    left: 39px;
+    top: 239px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    
+    align-items: center;
+    text-align: center;
+
+    color: #E2BE01;
+  }
+
+  #rectangle {
+    width:338px;
+    height:2px;
+    background:linear-gradient(90deg, #4DAFD9 0%, #E2BE01 78.9%, #B10404 100%);;
+    position:absolute;
+    top:359px;
+    left:28px;
+}
+
+  #workoutType {
+
+    position: absolute;
+    width: 311px;
+    height: 53px;
+    left: 39px;
+    top: 306px;
+
+    font-family: 'roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+  }
+
+
+  #workoutsection {
+    position: absolute;
+    width: 311px;
+    height: 53px;
+    left: 39px;
+    top: 306px;
+  }
+
+#pullbutton {
+    position: absolute;
+width: 150.98px;
+height: 69px;
+left: 204px;
+top: 398px;
+
+background: #B10404;
+border-radius: 30px;
+
+font-family: 'roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+}
+
+#pushbutton {
+    position: absolute;
+width: 150.98px;
+height: 69px;
+left: 35.68px;
+top: 398px;
+
+background: #4DAFD9;
+border-radius: 30px;
+
+font-family: 'roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+
+}
