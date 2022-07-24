@@ -13,55 +13,56 @@
 </head>
 	
 <body>
-    <header>
+    <header id="sticky">
 		<div class="Container"> 
 			<!--Left Corner Logo -->
-			<img alt="Logo" src="images/logo_com6338_options.png">
-			<nav>
+			<a href="index.html"><img id="pullLogo" alt="Logo" src="images/logo_com6338_options.png">
+			<nav></a>
 				<ul>
-					<li><a href="Workouts Page.html">Home</a></li>
-					<li><a href="Pull Page.html"><img alt="switch" src="images/Reloadswitch_icon.png"></a></li>
+					<li><a id="homePullId" href="Workouts Page.html">home</a></li>
+					<li><a id="switchId" href="Pull Page.html"><img alt="switch" src="images/Reloadswitch_icon.png"></a></li>
 				</ul>
-			</nav>
+				</nav>
+		</div>
+		<div id="white">
+		<img id="rx" src="images/rx-logo-png-transparent 1prescribed_rx.png" alt="prescription">
+		<div id="PushSum">
+			<h3 class="psh">push</h3>
+			<p class="bsm">: breakdown/summary</p>
+
+		<div id="blueBar"></div>
 		</div>
 	</header>
 
-    <main>
-		<div id="PushSum">
-			<h3 class="psh">Push:</h3>
-			<p class="bs">Breakdown/Summary</p>
-		</div>
-		
-		<div id="blueBar" style="border:1px solid #000;">This is a rectangle!</div> <!-- Remove the style and text - it will be added in the CSS sheet. Was just to see it-->
-		
+    <main id="main">
 		<article class="GroupOne">
 			<ul id="list">
 				<li id="tricep_name"></li>
-				    <ul>
+				    <ul id="indent">
 						<li id="tricep_description"></li>
 					   <li id="tricep_random_number"></li>
 				    </ul>
 				
 				<li id="quad_name"></li>
-				    <ul>
+				    <ul id="indent">
 					   <li id="quad_description"></li>
 					   <li id="quad_random_number"></li>
 				    </ul>
 
 					<li id="chest_name"></li>
-				    <ul>
+				    <ul id="indent">
 					   <li id="chest_description"></li>
 					   <li id="chest_random_number"></li>
 				    </ul>
 
 					<li id="serant_name"></li>
-				    <ul>
+				    <ul id="indent">
 					   <li id="serant_description"></li>
 					   <li id="serant_random_number"></li>
 				    </ul>
 
 					<li id="glutes_name"></li>
-				    <ul>
+				    <ul id="indent">
 					   <li id="glutes_description"></li>
 					   <li id="glutes_random_number"></li>
 				    </ul>
