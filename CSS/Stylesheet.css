@@ -6,47 +6,60 @@
   
 /* index CSS */
 
+#indexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#headerConatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
 #indexlogo {
-    position: absolute;
     width: 318px;
-    height: 89px;
-    left: 55px;
-    top: 158px;
+    padding: 10px;
 }
 
 
 
 #indexsubmit {
-    
     width: 160px;
     height: 41px;
+    font-weight: 700;
     background: #E2BE01;
     border-radius: 30px;
     text-align: center;
+    color: #FFFFFF;
 
 }
 
 #nameblock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   
 
-    position: absolute;
-    width: 240px;
-    height: 47px;
-    left: 75px;
-    top: 378px;
+}
 
-    background: #F5F5F5;
-    border-radius: 30px;
-
+#name-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #namelabel {
 /* Name: */
-
-position: absolute;
-width: 97px;
-height: 29px;
-left: -8px;
-top: -23px;
 
 font-family: 'roboto';
 font-style: normal;
@@ -54,29 +67,30 @@ font-weight: 700;
 font-size: 14px;
 line-height: 17px;
 
-align-items: center;
+align-self: start;
 text-align: center;
 color: #000000;
-
-
-
 
 }
 
 #inputtext {
-    position: absolute;
     font-family: 'roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    display: flex;
-    color: #D9D9D9;
-    background-color: transparent;
     padding-left: 45px;
+
+    width: 240px;
+    height: 47px;
+    left: 75px;
+    top: 378px;
+
+    background: #F5F5F5;
+    border-radius: 30px;
 }
 
-button{
+#button {
     padding-top: 50px;
     padding-left: 40px;
 }
@@ -102,15 +116,28 @@ button{
     border-radius: 30px;
   }
 
+  /* hello name */
+
 
   /* Welcome Page CSS */
 
+#helloBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
   #Hello {
-    position: absolute;
-    width: 298px;
-    height: 29px;
-    left: 65px;
-    top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 300px;
+    padding: 20px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -118,22 +145,26 @@ button{
     font-size: 20px;
     line-height: 23px;
 
-    align-items: center;
-
     background: linear-gradient(90deg, #4DAFD9 32.11%, #E2BE01 51.86%, #B10404 68.92%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
   }
 
- 
+  #helloTxt {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
 
   #inputName {
-    position: absolute;
-    width: 104px;
-    height: 29px;
-    left: 228px;
-    top: 143px;}
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    background: linear-gradient(90deg, #4DAFD9 32.11%, #E2BE01 51.86%, #B10404 68.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
 /*--- PULL PAGE CSS ---*/
 
@@ -147,8 +178,8 @@ button{
 
    #pullLogo {
       position: absolute;
-      left: 12px;
-      top: 35px;
+      left: 10px;
+      top: 10px;
       align-items: center;
       height: auto;
       width: 50vw;
@@ -168,7 +199,7 @@ button{
     color: #000000;
 }
 
- /*--reload button--*/ li#switchId {
+ /*--reload button--*/ a#switchId {
   position: absolute;
   right: 10px;
   top: 42px;
@@ -233,6 +264,7 @@ button{
   position: relative;
   padding-bottom: 20px;
   background-color: #FFFFFF;
+  line-height: 20px;
 }
 
 #lats_name,
@@ -254,6 +286,25 @@ button{
   align-items: center;
   color: #000000;
   text-transform:lowercase;
+  padding-bottom: 8px;
+  padding-top: 30px;
+}
+
+#indent {
+  padding-left: 80px;
+}
+
+#lats_random_number,
+#hams_random_number,
+#biceps_random_number,
+#abs_random_number,
+#trap_random_number,
+#tricep_random_number, 
+#quad_random_number,
+#chest_random_number,
+#serant_random_number,
+#glutes_random_number {
+padding-top: 8px;
 }
 
 #redBar {
@@ -282,50 +333,42 @@ button{
 }
 
   /* Workouts Page */
+  #workoutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    height: 100vh;
+  }
+
+#logoContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  top: 0;
+  padding-bottom: 18vh;
+}
+
   #workoutsLogo {
-    position: absolute;
-    width: 186px;
-    height: 51px;
-    left: 9px;
-    top: 68px;
+    width: 50vw;
+    height: auto;
   }
 
   #randomquote {
-    position: absolute;
-    width: 310px;
-    height: 58px;
-    left: 39px;
-    top: 239px;
-
+    width: 80vw;
+    border-bottom: 40px;
 
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 13px;
-    line-height: 15px;
-    
-    align-items: center;
     text-align: center;
 
     color: #E2BE01;
   }
     
-    #rectangle {
-    width:338px;
-    height:2px;
-    background:linear-gradient(90deg, #4DAFD9 0%, #E2BE01 78.9%, #B10404 100%);;
-    position:absolute;
-    top:359px;
-    left:28px;
-}
-
   #workoutType {
-
-    position: absolute;
-    width: 311px;
-    height: 53px;
-    left: 39px;
-    top: 306px;
+    width: 80vw;
+    padding: 10%;
 
     font-family: 'roboto';
     font-style: normal;
@@ -340,21 +383,43 @@ button{
 
   }
 
+  #rectangle {
+    width:80vw;
+    height:4px;
+    background:linear-gradient(90deg, #4DAFD9 0%, #E2BE01 78.9%, #B10404 100%);
+    justify-self: center;
+    align-self: center;
+}
 
-  #workoutsection {
-    position: absolute;
-    width: 311px;
-    height: 53px;
-    left: 39px;
-    top: 306px;
+  #whiteWorkout {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #navigateworkouts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10%;
+  }
+
+  #btnFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 3vw;
   }
 
 #pullbutton {
-    position: absolute;
 width: 150.98px;
 height: 69px;
-left: 204px;
-top: 398px;
 
 background: #B10404;
 border-radius: 30px;
@@ -364,14 +429,11 @@ font-style: normal;
 font-weight: 700;
 font-size: 24px;
 line-height: 29px;
-align-items: center;
-text-align: center;
 
 color: #ffffff;
 }
 
 #pushbutton {
-    position: absolute;
 width: 150.98px;
 height: 69px;
 left: 35.68px;
@@ -390,5 +452,102 @@ align-items: center;
 text-align: center;
 
 color: #ffffff;
+
+}
+
+@media screen and (min-width: 795px) {
+/* Workout Page Styling for Desktop */
+#logoContainer {
+  width: 318px
+}
+
+  #workoutSection {
+    padding: 10px;
+    border: 2px solid #000000;
+    width: 795px;
+    height: 40vh;
+    align-self: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 30px;
+    background-color: #FFFFFF;
+  }
+
+  #whiteWorkout {
+    padding: 0;
+    justify-content: end;
+  }
+
+  #randomquote {
+    font-size: 28px;
+    line-height: 34px;
+    width: auto;
+    padding: 40px;
+    position: absolute;
+    top: 10vh;
+  }
+
+#workoutType {
+  position: absolute;
+  top: 0;
+  background:linear-gradient(90deg, #4DAFD9 0%, #E2BE01 78.9%, #B10404 100%);
+  color: #FFFFFF;
+  width: 755px;
+  padding: 30px; 
+  border-radius: 30px 30px 0px 0px; 
+  font-weight: 700;
+font-size: 40px;
+line-height: 50px;
+}
+
+#rectangle {
+  display: none;
+}
+
+#navigateworkouts {
+  position: absolute;
+  bottom: 0;
+}
+
+#btnFlex {
+  width: 221px;
+  height: 101px;
+}
+
+#pushbutton, #pullbutton {
+  font-size: 34px;
+}
+
+/* Push Page Styling for Desktop */
+#pullLogo {
+  width: 318px;
+}
+
+h3.psh, h3.pll {
+  left: 10vw;
+}
+
+p.bsm {
+  left: 20vw;
+}
+
+#rx {
+  top: 300px
+}
+
+#white {
+  height: 40vh
+}
+
+#list {
+  padding-top: 42vh;
+}
+
+a#switchId {
+  right: 40px;
+}
+
+#homePullId {
+  right: 120px;
+}
 
 }
